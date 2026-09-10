@@ -4,7 +4,7 @@ public class Acessorio {
     private String id;
     private String nome;
     private String descricao;
-    private Boolean disponivel;
+    private boolean disponivel;
 
 
 
