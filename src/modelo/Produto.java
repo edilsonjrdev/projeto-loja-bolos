@@ -1,7 +1,7 @@
 package modelo;
 
 public class Produto {
-    private String  idProduto;
+    private String idProduto;
     private String nome;
     private String descricao;
     private float preco;
@@ -9,7 +9,7 @@ public class Produto {
     private String tempoPreparo;
     private boolean disponibilidade;
 
-    public Produto (String idProduto, String name, String descricao, float preco, String peso, String tempoPreparo, boolean disponibilidade) {
+    public Produto(String idProduto, String name, String descricao, float preco, String peso, String tempoPreparo, boolean disponibilidade) {
         this.idProduto = idProduto;
         this.nome = nome;
         this.descricao = descricao;

@@ -9,7 +9,7 @@ public class Colaborador {
     private String senha;
     private boolean admin;
 
-    public Colaborador(String idColaborador, String nome, String endereco, String email, String login, String senha, boolean admin){
+    public Colaborador(String idColaborador, String nome, String endereco, String email, String login, String senha, boolean admin) {
         this.idColaborador = idColaborador;
         this.nome = nome;
         this.endereco = endereco;
@@ -19,59 +19,59 @@ public class Colaborador {
         this.admin = admin;
     }
 
-    public String getIdColaborador(){
+    public String getIdColaborador() {
         return idColaborador;
     }
 
-    public void setIdColaborador(String idColaborador){
+    public void setIdColaborador(String idColaborador) {
         this.idColaborador = idColaborador;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getEndereco(){
+    public String getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(String endereco){
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email){
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getLogin(){
+    public String getLogin() {
         return login;
     }
 
-    public void setLogin(String login){
+    public void setLogin(String login) {
         this.login = login;
     }
 
-    public String getSenha(){
+    public String getSenha() {
         return senha;
     }
 
-    public void getSenha(String senha){
+    public void getSenha(String senha) {
         this.senha = senha;
     }
 
-    public boolean getAdmin(){
+    public boolean getAdmin() {
         return admin;
     }
 
-    public void setAdmin(boolean admin){
+    public void setAdmin(boolean admin) {
         this.admin = false;
     }
 
