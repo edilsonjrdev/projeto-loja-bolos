@@ -5,16 +5,18 @@ import java.time.LocalDateTime;
 public class Venda {
     private String id;
     private Pagamento pagamento;
-    private Colaborador colaborador;
+    private Funcionario funcionario;
     private LocalDateTime horario;
 
-    public Venda(String id, Pagamento pagamento, Colaborador colaborador, LocalDateTime horario) {
+    //construtor inicial
+    public Venda(String id, Pagamento pagamento, Funcionario funcionario, LocalDateTime horario) {
         this.id = id;
         this.pagamento = pagamento;
-        this.colaborador = colaborador;
+        this.funcionario = funcionario;
         this.horario = horario;
     }
 
+    //métodos getters e setters
     public String getId() {
         return id;
     }
@@ -31,12 +33,12 @@ public class Venda {
         this.pagamento = pagamento;
     }
 
-    public Colaborador getColaborador() {
-        return colaborador;
+    public Funcionario getColaborador() {
+        return funcionario;
     }
 
-    public void setColaborador(Colaborador colaborador) {
-        this.colaborador = colaborador;
+    public void setColaborador(Funcionario funcionario) {
+        this.funcionario = funcionario;
     }
 
     public LocalDateTime getHorario() {

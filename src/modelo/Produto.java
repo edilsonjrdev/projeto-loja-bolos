@@ -2,16 +2,17 @@ package modelo;
 
 public class Produto {
     private String idProduto;
-    private String nome;
+    private String nomeProduto;
     private String descricao;
     private float preco;
     private String peso;
     private String tempoPreparo;
     private boolean disponibilidade;
 
+    //construtor inicial
     public Produto(String idProduto, String name, String descricao, float preco, String peso, String tempoPreparo, boolean disponibilidade) {
         this.idProduto = idProduto;
-        this.nome = nome;
+        this.nomeProduto = nomeProduto;
         this.descricao = descricao;
         this.preco = preco;
         this.peso = peso;
@@ -19,6 +20,7 @@ public class Produto {
         this.disponibilidade = disponibilidade;
     }
 
+    //métodos getters e setters
     public String getIdProduto() {
         return idProduto;
     }
@@ -27,12 +29,12 @@ public class Produto {
         this.idProduto = idProduto;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeProduto() {
+        return nomeProduto;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeProduto(String nome) {
+        this.nomeProduto = nome;
     }
 
     public String getDescricao() {

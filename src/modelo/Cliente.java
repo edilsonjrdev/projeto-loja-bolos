@@ -2,19 +2,21 @@ package modelo;
 
 public class Cliente {
     private String idCliente;
-    private String nome;
+    private String nomeCliente;
     private String endereco;
     private String telefone;
     private String email;
 
-    public Cliente(String idCliente, String nome, String endereco, String telefone, String email) {
+    //construtor inicial
+    public Cliente(String idCliente, String nomeCliente, String endereco, String telefone, String email) {
         this.idCliente = idCliente;
-        this.nome = nome;
+        this.nomeCliente = nomeCliente;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
     }
 
+    //métodos getters e setters
     public String getIdCliente() {
         return idCliente;
     }
@@ -23,12 +25,12 @@ public class Cliente {
         this.idCliente = idCliente;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCliente() {
+        return nomeCliente;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
     public String getEndereco() {

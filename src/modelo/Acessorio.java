@@ -6,6 +6,7 @@ public class Acessorio {
     private String descricaoAcessorio;
     private boolean disponivel;
 
+    //construtor inicial
     public Acessorio(String id, String nome, String descricao, String disponivel) {
         this.idAcessorio = idAcessorio;
         this.nomeAcessorio = nomeAcessorio;
@@ -13,6 +14,7 @@ public class Acessorio {
         this.disponivel = true;
     }
 
+    //métodos getters e setters
     public String getIdAcessorio() {
         return idAcessorio;
     }

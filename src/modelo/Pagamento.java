@@ -8,6 +8,7 @@ public class Pagamento {
     private double valorPagamento;
     private boolean parcelado;
 
+    //construtor inicial
     public Pagamento(String idPagamento, LocalDateTime horarioPagamento, double valorPagamento, boolean parcelado) {
         this.idPagamento = idPagamento;
         this.horarioPagamento = horarioPagamento;
@@ -15,6 +16,7 @@ public class Pagamento {
         this.parcelado = false;
     }
 
+    //métodos getters e setters
     public String getIdPagamento() {
         return idPagamento;
     }

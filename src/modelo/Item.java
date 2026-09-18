@@ -6,6 +6,7 @@ public class Item {
     private String descricaoItem;
     private boolean disponivel;
 
+    //construtor inicial
     public Item(String idItem, String nomeItem, String descricaoItem, boolean disponivel) {
         this.idItem = idItem;
         this.nomeItem = nomeItem;
@@ -13,6 +14,7 @@ public class Item {
         this.disponivel = true;
     }
 
+    //métodos getters e setters
     public String getIdItem() {
         return idItem;
     }

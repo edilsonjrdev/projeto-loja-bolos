@@ -1,17 +1,18 @@
 package modelo;
 
-public class Colaborador {
-    private String idColaborador;
-    private String nome;
+public class Funcionario {
+    private String idFuncionario;
+    private String nomeFuncionario;
     private String endereco;
     private String email;
     private String login;
     private String senha;
     private boolean admin;
 
-    public Colaborador(String idColaborador, String nome, String endereco, String email, String login, String senha, boolean admin) {
-        this.idColaborador = idColaborador;
-        this.nome = nome;
+    //construtor inicial
+    public Funcionario(String idColaborador, String nome, String endereco, String email, String login, String senha, boolean admin) {
+        this.idFuncionario = idFuncionario;
+        this.nomeFuncionario = nomeFuncionario;
         this.endereco = endereco;
         this.email = email;
         this.login = login;
@@ -19,20 +20,21 @@ public class Colaborador {
         this.admin = admin;
     }
 
-    public String getIdColaborador() {
-        return idColaborador;
+    //métodos getters e setters
+    public String getIdFuncionario() {
+        return idFuncionario;
     }
 
-    public void setIdColaborador(String idColaborador) {
-        this.idColaborador = idColaborador;
+    public void setIdFuncionario(String idFuncionario) {
+        this.idFuncionario = idFuncionario;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeFuncionario() {
+        return nomeFuncionario;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeFuncionario(String nomeFuncionario) {
+        this.nomeFuncionario = nomeFuncionario;
     }
 
     public String getEndereco() {

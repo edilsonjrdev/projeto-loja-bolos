@@ -7,12 +7,14 @@ public class Agendamento {
     private LocalDateTime retirada;
     private boolean disponivel;
 
+    //construtor inicial
     public Agendamento(Venda venda, LocalDateTime retirada, boolean disponivel) {
         this.venda = venda;
         this.retirada = retirada;
         this.disponivel = true;
     }
 
+    //métodos getters e setters
     public Venda getVenda() {
         return venda;
     }
