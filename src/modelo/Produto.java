@@ -10,7 +10,7 @@ public class Produto {
     private boolean disponibilidade;
 
     //construtor inicial
-    public Produto(String idProduto, String name, String descricao, float preco, String peso, String tempoPreparo, boolean disponibilidade) {
+    public Produto(String idProduto, String nomeProduto, String descricao, float preco, String peso, String tempoPreparo, boolean disponibilidade) {
         this.idProduto = idProduto;
         this.nomeProduto = nomeProduto;
         this.descricao = descricao;

@@ -1,25 +1,17 @@
 package repositorio;
 
 import modelo.Cliente;
+import modelo.Emprestimo;
 
 public class ClienteRepositorio {
-    private int proximaPosicaoLivre;
     private Cliente[] clientes = new Cliente[100];
 
     //construtor inicial
     public ClienteRepositorio() {
-        this.proximaPosicaoLivre = 0;
         this.clientes = new Cliente[100];
     }
 
     //métodos getters e setters
-    public int getProximaPosicaoLivre() {
-        return proximaPosicaoLivre;
-    }
-
-    public void setProximaPosicaoLivre(int proximaPosicaoLivre) {
-        this.proximaPosicaoLivre = proximaPosicaoLivre;
-    }
 
     public Cliente[] getClientes() {
         return clientes;
@@ -31,8 +23,12 @@ public class ClienteRepositorio {
 
     //adicionar cliente
     public void adicionarCliente(Cliente cliente) {
-        clientes[proximaPosicaoLivre] = cliente;
-        proximaPosicaoLivre++;
+        for (int i = 0; i < clientes.length; i++) {
+            if (clientes[i] == null) {
+                clientes[i] = cliente;
+                return;
+            }
+        }
     }
 
     //listar clientes
@@ -41,37 +37,30 @@ public class ClienteRepositorio {
     }
 
     //buscar cliente por id
-    public Cliente buscarClientePorId(String idCliente) {
-        for (int i = 0; i < proximaPosicaoLivre; i++) {
+    public Cliente buscarClientesPorId(String idCliente) {
+        for (int i = 0; i < clientes.length; i++) {
             if (clientes[i] != null && clientes[i].getIdCliente().equals(idCliente)) {
                 return clientes[i];
             }
         }
         return null;
     }
-
     //buscar cliente por nome
-    public Cliente buscarClientePorNome(String nomeCliente) {
-        for (int i = 0; i < proximaPosicaoLivre; i++) {
-            if (clientes[i] != null && clientes[i].getNomeCliente().equalsIgnoreCase(nomeCliente)) {
+    public Cliente buscarClientesPornome(String nome) {
+        for (int i = 0; i < clientes.length; i++) {
+            if (clientes[i] != null && clientes[i].getNomeCliente().equals(nome)) {
                 return clientes[i];
             }
         }
         return null;
     }
-
     //remover cliente
-    public boolean removerCliente(String idCliente) {
-        for (int i = 0; i < proximaPosicaoLivre; i++) {
+    public void removerClienteporId(String idCliente) {
+        for (int i = 0; i < clientes.length; i++) {
             if (clientes[i] != null && clientes[i].getIdCliente().equals(idCliente)) {
-                for (int j = i; j < proximaPosicaoLivre - 1; j++) {
-                    clientes[j] = clientes[j + 1];
-                    clientes[proximaPosicaoLivre - 1] = null;
-                    proximaPosicaoLivre--;
-                    return true;
-                }
+                clientes[i] = null;
             }
+            return;
         }
-        return false;
     }
 }
