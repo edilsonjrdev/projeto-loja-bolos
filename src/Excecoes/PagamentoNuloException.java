@@ -1,4 +1,7 @@
 package Excecoes;
 
-public class PagamentoNuloException {
+public class PagamentoNuloException extends Exception{
+    public PagamentoNuloException (String message){
+        super(message);
+    }
 }
